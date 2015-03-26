@@ -33,6 +33,7 @@ namespace LeadsWithAuth.Controllers
         public AccountController(UserManager<IdentityUser> userManager,
             ISecureDataFormat<AuthenticationTicket> accessTokenFormat)
         {
+
             UserManager = userManager;
             AccessTokenFormat = accessTokenFormat;
         }
