@@ -218,6 +218,10 @@
     <Compile Include="Migrations\201504170241215_InitialSeed1.Designer.cs">
       <DependentUpon>201504170241215_InitialSeed1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201504170328211_updatedDB.cs" />
+    <Compile Include="Migrations\201504170328211_updatedDB.Designer.cs">
+      <DependentUpon>201504170328211_updatedDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -256,7 +260,8 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <None Include="Properties\PublishProfiles\312Leads.pubxml" />
+    <None Include="Properties\PublishProfiles\312Leads - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\312Leads - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -319,6 +324,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201504170241215_InitialSeed1.resx">
       <DependentUpon>201504170241215_InitialSeed1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504170328211_updatedDB.resx">
+      <DependentUpon>201504170328211_updatedDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
