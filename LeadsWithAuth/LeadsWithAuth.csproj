@@ -181,8 +181,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\BusinessesController.cs" />
-    <Compile Include="Controllers\InspectionTypesController.cs" />
+    <Compile Include="Controllers\InspectionsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -210,6 +209,14 @@
     <Compile Include="Migrations\201504170159354_InitialDBCreate.cs" />
     <Compile Include="Migrations\201504170159354_InitialDBCreate.Designer.cs">
       <DependentUpon>201504170159354_InitialDBCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504170231316_InitialSeed.cs" />
+    <Compile Include="Migrations\201504170231316_InitialSeed.Designer.cs">
+      <DependentUpon>201504170231316_InitialSeed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504170241215_InitialSeed1.cs" />
+    <Compile Include="Migrations\201504170241215_InitialSeed1.Designer.cs">
+      <DependentUpon>201504170241215_InitialSeed1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
@@ -306,6 +313,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201504170159354_InitialDBCreate.resx">
       <DependentUpon>201504170159354_InitialDBCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504170231316_InitialSeed.resx">
+      <DependentUpon>201504170231316_InitialSeed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504170241215_InitialSeed1.resx">
+      <DependentUpon>201504170241215_InitialSeed1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

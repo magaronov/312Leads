@@ -8,6 +8,6 @@
         [DatabaseGenerated(DatabaseGeneratedOption.Identity), Key, Required]
         public int ViolationTypeId { get; set; }
 
-        public string Desscription { get; set; }
+        public string Description { get; set; }
     }
 }
