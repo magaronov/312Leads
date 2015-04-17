@@ -40,7 +40,7 @@ namespace LeadsWithAuth.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (id != inspectiontype.Id)
+            if (id != inspectiontype.InspectionTypeId)
             {
                 return BadRequest();
             }
@@ -78,7 +78,7 @@ namespace LeadsWithAuth.Controllers
             db.InspectionTypes.Add(inspectiontype);
             await db.SaveChangesAsync();
 
-            return CreatedAtRoute("DefaultApi", new { id = inspectiontype.Id }, inspectiontype);
+            return CreatedAtRoute("DefaultApi", new { id = inspectiontype.InspectionTypeId }, inspectiontype);
         }
 
         // DELETE api/Default1/5
@@ -108,7 +108,7 @@ namespace LeadsWithAuth.Controllers
 
         private bool InspectionTypeExists(int id)
         {
-            return db.InspectionTypes.Count(e => e.Id == id) > 0;
+            return db.InspectionTypes.Count(e => e.InspectionTypeId == id) > 0;
         }
     }
 }

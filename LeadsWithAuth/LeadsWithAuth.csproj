@@ -207,13 +207,23 @@
     <Compile Include="Migrations\201503130239335_DeleteAuthors.Designer.cs">
       <DependentUpon>201503130239335_DeleteAuthors.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201504170159354_InitialDBCreate.cs" />
+    <Compile Include="Migrations\201504170159354_InitialDBCreate.Designer.cs">
+      <DependentUpon>201504170159354_InitialDBCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Author.cs" />
-    <Compile Include="Models\Business.cs" />
+    <Compile Include="Models\Facility.cs" />
+    <Compile Include="Models\FacilityType.cs" />
+    <Compile Include="Models\Inspection.cs" />
     <Compile Include="Models\InspectionType.cs" />
     <Compile Include="Models\LeadsWithAuthContext.cs" />
+    <Compile Include="Models\RiskLevel.cs" />
+    <Compile Include="Models\ServiceProviderType.cs" />
+    <Compile Include="Models\Violation.cs" />
+    <Compile Include="Models\ViolationType.cs" />
+    <Compile Include="Models\ViolationTypeServiceProviderTypeXRef.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -293,6 +303,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201503130239335_DeleteAuthors.resx">
       <DependentUpon>201503130239335_DeleteAuthors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504170159354_InitialDBCreate.resx">
+      <DependentUpon>201504170159354_InitialDBCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
